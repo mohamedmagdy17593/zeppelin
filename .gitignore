@@ -128,3 +128,4 @@ tramp
 
 # Git properties
 **/git.properties
+zeppelin-web/package-lock.json
