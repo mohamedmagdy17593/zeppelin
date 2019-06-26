@@ -12,7 +12,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <headroom tolerance="10" offset="30" class="noteAction"
-          ng-show="note.id && !paragraphUrl">
+          ng-show="note.id && !paragraphUrl"
+          style="display: flex; justify-content: center">
   <h3>
     <!-- INCORTA -->
     <!-- <div class="notebook-actionBar-title"
@@ -297,8 +298,7 @@ limitations under the License.
 
 
     <div class="pull-right" style="margin-top:15px; margin-right:15px; margin-left: 15px; margin-bottom: 13px; font-size:15px;">
-      <!-- INCORTA -->
-      <!-- <span ng-if="!revisionView">
+      <span ng-if="!revisionView">
         <span class="setting-btn"
               type="button"
               data-toggle="modal"
@@ -306,21 +306,23 @@ limitations under the License.
               tooltip-placement="bottom" uib-tooltip="List of shortcuts">
           <i class="fa fa-keyboard-o"></i>
         </span>
-        <span class="setting-btn"
+        <!-- INCORTA -->
+        <!-- <span class="setting-btn"
               type="button"
               ng-click="toggleSetting()"
               tooltip-placement="bottom" uib-tooltip="Interpreter binding">
           <i class="fa fa-cog" ng-style="{color: showSetting ? '#3071A9' : 'black' }"></i>
-        </span>
-        <span class="setting-btn"
+        </span> -->
+        <!-- INCORTA -->
+        <!-- <span class="setting-btn"
               type="button"
               ng-click="togglePermissions()"
               tooltip-placement="bottom" uib-tooltip="Note permissions">
           <i class="fa fa-lock" ng-style="{color: showPermissions ? '#3071A9' : 'black' }"></i>
-        </span>
-      </span> -->
+        </span> -->
+      </span>
 
-      <span class="btn-group">
+      <!-- <span class="btn-group">
         <button type="button" class="btn btn-default btn-xs dropdown-toggle"
                 data-toggle="dropdown">
           {{note.config.looknfeel}} <span class="caret"></span>
@@ -330,7 +332,7 @@ limitations under the License.
             <a style="cursor:pointer" ng-click="setLookAndFeel(looknfeel)">{{looknfeel}}</a>
           </li>
         </ul>
-      </span>
+      </span> -->
     </div>
   </h3>
 </headroom>
