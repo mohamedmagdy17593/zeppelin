@@ -1526,7 +1526,8 @@ function NotebookCtrl($scope, $route, $routeParams, $location, $rootScope,
   });
 
   angular.element(window).bind('resize', function() {
-    const actionbarHeight = document.getElementById('actionbar').lastElementChild.clientHeight;
-    angular.element(document.getElementById('content')).css('padding-top', actionbarHeight - 20);
+    // INCORTA
+    // const actionbarHeight = document.getElementById('actionbar').lastElementChild.clientHeight;
+    angular.element(document.getElementById('content')).css('padding-top', 0);
   });
 }
