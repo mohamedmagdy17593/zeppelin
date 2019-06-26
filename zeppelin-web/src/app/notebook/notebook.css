@@ -13,7 +13,8 @@
  */
 
 .notebookContent {
-  padding-top: 36px;
+  /* INCORTA */
+  padding-top: 0px;
 }
 
 .revision  {
@@ -344,7 +345,8 @@
 /** required to pin, unpin `noteAction` */
 .noteAction.headroom {
   position: fixed;
-  top: 50px;
+  /* INCORTA */
+  top: 0px;
   left: 0;
   right: 0;
   transition: all .2s ease-in-out;

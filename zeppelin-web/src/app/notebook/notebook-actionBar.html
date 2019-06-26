@@ -14,7 +14,8 @@ limitations under the License.
 <headroom tolerance="10" offset="30" class="noteAction"
           ng-show="note.id && !paragraphUrl">
   <h3>
-    <div class="notebook-actionBar-title"
+    <!-- INCORTA -->
+    <!-- <div class="notebook-actionBar-title"
          ng-controller="ElasticInputCtrl as input">
       <input type="text" pu-elastic-input class="form-control-title-input" placeholder="New name"
              ng-if="input.showEditor" ng-model="input.value" ng-escape="input.showEditor = false" focus-if="input.showEditor"
@@ -25,7 +26,7 @@ limitations under the License.
          uib-tooltip={{noteName(note)}}
          ng-click="input.showEditor = !revisionView; input.value = note.name"
          ng-show="!input.showEditor"><span>{{noteName(note)}}</span></p>
-    </div>
+    </div> -->
     <div style="float: left; padding-bottom: 10px">
       <span class="labelBtn btn-group">
       <button type="button"
@@ -61,22 +62,24 @@ limitations under the License.
         <i class="fa fa-eraser"></i>
       </button>
 
-      <button type="button"
+      <!-- INCORTA -->
+      <!-- <button type="button"
               class="btn btn-default btn-xs"
               ng-hide="viewOnly"
               tooltip-placement="bottom" uib-tooltip="Clone this note" data-source-note-name="{{note.name}}"
               data-toggle="modal" data-target="#noteCreateModal" data-clone="true"
               ng-disabled="revisionView">
         <i class="fa fa-copy"></i>
-      </button>
-      <button type="button"
+      </button> -->
+      <!-- INCORTA -->
+      <!-- <button type="button"
               class="btn btn-default btn-xs"
               ng-hide="viewOnly"
               ng-click="exportNote()"
               tooltip-placement="bottom" uib-tooltip="Export this note"
               ng-disabled="revisionView">
         <i class="fa fa-download"></i>
-      </button>
+      </button> -->
 
       <button type="button"
               class="btn btn-primary btn-xs"
@@ -225,8 +228,8 @@ limitations under the License.
     </span>
 
 <!-- put the delete action by itself for your protection -->
-      <span class="labelBtn btn-group" style="vertical-align:middle; display:inline-block;">
-        <!-- if the note is in the trash, remove note permanently -->
+      <!-- INCORTA -->
+      <!-- <span class="labelBtn btn-group" style="vertical-align:middle; display:inline-block;">
         <button ng-if="isTrash(note)"
                 type="button"
                 class="btn btn-default btn-xs"
@@ -236,7 +239,6 @@ limitations under the License.
                 ng-disabled="revisionView">
           <i class="icon-trash"></i>
         </button>
-        <!-- if the note is not in the trash, move to trash -->
         <button ng-if="!isTrash(note)"
                 type="button"
                 class="btn btn-default btn-xs"
@@ -246,7 +248,7 @@ limitations under the License.
                 ng-disabled="revisionView">
           <i class="icon-trash"></i>
         </button>
-      </span>
+      </span> -->
 
       <span ng-hide="viewOnly">
       <div class="labelBtn btn-group" ng-if="note.config.isZeppelinNotebookCronEnable">
@@ -295,7 +297,8 @@ limitations under the License.
 
 
     <div class="pull-right" style="margin-top:15px; margin-right:15px; margin-left: 15px; margin-bottom: 13px; font-size:15px;">
-      <span ng-if="!revisionView">
+      <!-- INCORTA -->
+      <!-- <span ng-if="!revisionView">
         <span class="setting-btn"
               type="button"
               data-toggle="modal"
@@ -315,7 +318,7 @@ limitations under the License.
               tooltip-placement="bottom" uib-tooltip="Note permissions">
           <i class="fa fa-lock" ng-style="{color: showPermissions ? '#3071A9' : 'black' }"></i>
         </span>
-      </span>
+      </span> -->
 
       <span class="btn-group">
         <button type="button" class="btn btn-default btn-xs dropdown-toggle"
