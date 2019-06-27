@@ -136,7 +136,7 @@
   font-family: 'Roboto', sans-serif;
   background: white;
   position: fixed;
-  top: 50px;
+  top: 0;
   width: 100%;
   min-height: 54px;
   z-index: 10001;
