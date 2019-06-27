@@ -79,7 +79,8 @@ limitations under the License.
       </span>
 
       <ul class="dropdown-menu dropdown-menu-right" role="menu" style="width:270px;z-index:1002">
-        <li ng-controller="clipboardCtrl" ng-click="$event.stopPropagation()" style="text-align:center;margin-top:4px;">
+        <!-- INCORTA -->
+        <!-- <li ng-controller="clipboardCtrl" ng-click="$event.stopPropagation()" style="text-align:center;margin-top:4px;">
           <a  ngclipboard
               ngclipboard-success="complete($event)"
               ngclipboard-error="clipError($event)"
@@ -88,8 +89,8 @@ limitations under the License.
               uib-tooltip="{{tooltip}}">
             <span>{{paragraph.id}}</span>
           </a>
-        </li>
-        <li role="separator" class="divider"></li>
+        </li> -->
+        <!-- <li role="separator" class="divider"></li> -->
         <li style="padding-top:8px"
             ng-if="paragraph.config.runOnSelectionChange == true || paragraph.config.runOnSelectionChange == false">
           <span ng-if="paragraph.config.runOnSelectionChange == true" class="fa fa-toggle-on shortcut-icon" style="padding:3px 8px 8px 20px"></span>
